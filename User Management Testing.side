@@ -1,0 +1,206 @@
+{
+  "id": "cde2fec9-9b54-4e9d-a12c-50fabd1a765a",
+  "version": "2.0",
+  "name": "User Management Testing",
+  "url": "http://localhost:8080",
+  "tests": [{
+    "id": "d1f99f80-8ee9-4f55-a8e4-65c430222c31",
+    "name": "Create New Employee test",
+    "commands": [{
+      "id": "a769dc5b-60c3-4771-a4f7-e5989a2f64fe",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "46171f46-096b-4805-80ee-1727bc4ba188",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1104x809",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bcca210c-132d-468d-858d-2f7c9a11e841",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Add Employee",
+      "targets": [
+        ["linkText=Add Employee", "linkText"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Add Employee')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/add')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Add Employee')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b43b26e0-92e5-4479-87d1-565e0cd3c758",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "07c1c9e6-9855-47de-8d56-9e2e3588716e",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Shabbir"
+    }, {
+      "id": "3406e109-d50b-434e-9f87-a65da6ff23b5",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "shabbir0kha@gmail.com"
+    }, {
+      "id": "84a52cc6-746d-41d0-8d92-12c1669e1b98",
+      "comment": "",
+      "command": "type",
+      "target": "id=age",
+      "targets": [
+        ["id=age", "id"],
+        ["name=age", "name"],
+        ["css=#age", "css:finder"],
+        ["xpath=//input[@id='age']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "21"
+    }, {
+      "id": "cdb40062-385d-40de-8288-59c99fabb22d",
+      "comment": "",
+      "command": "click",
+      "target": "id=designation",
+      "targets": [
+        ["id=designation", "id"],
+        ["name=designation", "name"],
+        ["css=#designation", "css:finder"],
+        ["xpath=//input[@id='designation']", "xpath:attributes"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e90c683c-4e49-4eb2-ad50-613607ae6143",
+      "comment": "",
+      "command": "type",
+      "target": "id=designation",
+      "targets": [
+        ["id=designation", "id"],
+        ["name=designation", "name"],
+        ["css=#designation", "css:finder"],
+        ["xpath=//input[@id='designation']", "xpath:attributes"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "Developer"
+    }, {
+      "id": "5dfc7758-5e61-45ff-bae7-7d7e03080670",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-info",
+      "targets": [
+        ["css=.btn-info", "css:finder"],
+        ["xpath=//input[@value='save']", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "d0f44928-6850-4d20-8c56-35c8f3977281",
+    "name": "Update Employee Test",
+    "commands": [{
+      "id": "e47da04f-e965-4ea6-92a1-cd3a82776b3b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8d585d11-fe9a-4a8b-bd59-b892b2b3dc75",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1104x809",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c78cc5f5-5c03-42bb-b6f7-4f695797c69e",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) .btn-primary",
+      "targets": [
+        ["css=tr:nth-child(2) .btn-primary", "css:finder"],
+        ["xpath=(//a[contains(text(),'Update')])[2]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/updateform/52')]", "xpath:href"],
+        ["xpath=//tr[2]/td[5]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2de2d3b-036c-434c-a87b-0626feb0f503",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "43bf96dc-ba00-4b7d-b11a-5a7ec0360922",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "syedowaisahmed22@gmail.com"
+    }, {
+      "id": "c811d57e-8e85-4c7b-99ee-f2112ad3508d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-info",
+      "targets": [
+        ["css=.btn-info", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Save')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "cb50d5d9-ead8-4342-9b50-b21412c54430",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d1f99f80-8ee9-4f55-a8e4-65c430222c31"]
+  }],
+  "urls": ["http://localhost:8080/"],
+  "plugins": []
+}
